@@ -1,22 +1,26 @@
 /** @type {import('tailwindcss').Config} */
+
+let plugin = require("tailwindcss/plugin");
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        'display-serif': ['garamond-premier-pro-display', 'serif'],
-        'display-sans': ['neue-haas-grotesk-display', 'sans-serif'],
-        'heading': ['poppins', 'sans-serif'],
-        'body': ['garamond-premier-pro', 'serif'],
+        "display-serif": ["garamond-premier-pro-display", "serif"],
+        "display-sans": ["neue-haas-grotesk-display", "sans-serif"],
+        heading: ["poppins", "sans-serif"],
+        body: ["garamond-premier-pro", "serif"],
       },
       colors: {
-        tan: '#F6F1EC',
-        'gray-lightest': '#ECECEC',
-      }
+        tan: "#F6F1EC",
+        "gray-lightest": "#ECECEC",
+      },
     },
   },
-  plugins: [],
-}
+  plugins: [
+    plugin(function ({ addVariant }) {
+      // Add a `child` variant, ie. `child:pb-0`
+      addVariant("child", "& *");
+    }),
+  ],
+};
