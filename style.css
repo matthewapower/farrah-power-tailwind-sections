@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.css-wc8u6p {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: flex-end;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  min-height: 300px;
+  border-bottom: 1px solid black;
+}
+
+.css-wc8u6p h1 {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.css-9uocch {
+  width: 100%;
+  min-height: 80vh;
+  background-size: cover;
+  background-position: center center;
+  border-bottom-width: 1px;
+  border-color: rgb(0, 0, 0);
+}
