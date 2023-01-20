@@ -10,155 +10,155 @@
   </head>
   <body>
     <div 
-      class="group relative" 
+      class="tw-group tw-relative" 
       x-data="{ content: 'COPY' }"
     >
       <button 
-        class="absolute top-0 right-0 m-4 bg-gray-500 text-white p-2 rounded active:bg-gray-600 uppercase hidden group-hover:block"
+        class="tw-absolute tw-top-0 tw-right-0 tw-m-4 tw-bg-gray-500 tw-text-white tw-p-2 tw-rounded active:tw-bg-gray-600 tw-uppercase tw-hidden group-hover:tw-block"
         @click="navigator.clipboard.writeText($refs.section.outerHTML.replace(/>\s+</g,'><').replace(/<img(.*?)>/g, '{image 1}')); content = 'COPIED!'"
         @mouseleave="content = 'COPY'"
         x-text="content"
       ></button>
       <section x-ref="section">
-        <div class="css-wc8u6p ei3di2u0"><h1 class="font-display-serif">2021 - 2022 Wedding Collections</h1></div>
-        <div class="css-9uocch ei3di2u1 relative child:object-cover child:absolute child:w-full child:h-full">
+        <div class="css-wc8u6p ei3di2u0"><h1 class="tw-font-display-serif">2021 - 2022 Wedding Collections</h1></div>
+        <div class="css-9uocch ei3di2u1 tw-relative child:tw-object-cover child:tw-absolute child:tw-w-full child:tw-h-full">
           <img src="https://res.cloudinary.com/ds9ng4srx/image/upload/v1585512052/Farrah/bg-2_1_tmx4n2.png" alt="">
         </div>
       </section>
     </div>
 
     <div 
-      class="group relative" 
+      class="tw-group tw-relative" 
       x-data="{ content: 'COPY' }"
     >
       <button 
-        class="absolute top-0 right-0 m-4 bg-gray-500 text-white p-2 rounded active:bg-gray-600 uppercase hidden group-hover:block"
+        class="tw-absolute tw-top-0 tw-right-0 tw-m-4 tw-bg-gray-500 tw-text-white tw-p-2 tw-rounded active:tw-bg-gray-600 tw-uppercase tw-hidden group-hover:tw-block"
         @click="navigator.clipboard.writeText($refs.section.outerHTML.replace(/>\s+</g,'><').replace(/<img(.*?)>/g, '{image 1}')); content = 'COPIED!'"
         @mouseleave="content = 'COPY'"
         x-text="content"
       ></button>
-      <section class="flex flex-col w-full px-4 py-12 md:flex-row" x-ref="section">
-        <div class="w-full h-64 bg-center bg-cover md:w-1/3 md:h-auto relative child:object-cover child:absolute child:w-full child:h-full">
+      <section class="tw-flex tw-flex-col tw-w-full tw-px-4 tw-py-12 md:tw-flex-row" x-ref="section">
+        <div class="tw-w-full tw-h-64 tw-bg-center tw-bg-cover md:tw-w-1/3 md:tw-h-auto tw-relative child:tw-object-cover child:tw-absolute child:tw-w-full child:tw-h-full">
           <img src="https://res.cloudinary.com/ds9ng4srx/image/upload/v1585608957/Farrah/Fleischer_286_of_798_Fleischer_286_of_798_fnbzgw.jpg">
         </div>
         <div
-          class="flex flex-col flex-wrap items-start py-8 border-b border-black md:mx-4 md:border-t md:w-2/3 md:pt-40 md:flex-row">
-          <div class="md:w-1/2 md:pr-4">
-            <h2 class="mb-4 text-3xl font-display-serif md:text-5xl">Collection One</h2>
-            <p class="mb-4 text-3xl font-display-sans">$000</p>
-            <p class="mb-8">All day coverage from getting ready up until the grand exit. This collection is perfect if you
+          class="tw-flex tw-flex-col tw-flex-wrap tw-items-start tw-py-8 tw-border-b tw-border-black md:tw-mx-4 md:tw-border-t md:tw-w-2/3 md:tw-pt-40 md:tw-flex-row">
+          <div class="md:tw-w-1/2 md:tw-pr-4">
+            <h2 class="tw-mb-4 tw-text-3xl tw-font-display-serif md:tw-text-5xl">Collection One</h2>
+            <p class="tw-mb-4 tw-text-3xl tw-font-display-sans">$000</p>
+            <p class="tw-mb-8">All day coverage from getting ready up until the grand exit. This collection is perfect if you
               want everything documented along with 35mm film and a beautifully designed heirloom album.</p>
           </div>
-          <div class="md:w-1/2">
-            <h4 class="mb-4 text-lg uppercase font-heading md:mt-20">Includes</h4>
-            <ul class="mb-8 md:mb-0">
-              <li class="mb-0">10-hour coverage</li>
-              <li class="mb-0">Custom wedding photography timeline</li>
-              <li class="mb-0">Online Gallery with Print Ordering</li>
-              <li class="mb-0">10 x 10 Fine-Art Album</li>
-              <li class="mb-0">Second Photographer</li>
-              <li class="mb-0">35mm Film Photos</li>
+          <div class="md:tw-w-1/2">
+            <h4 class="tw-mb-4 tw-text-lg tw-uppercase tw-font-heading md:tw-mt-20">Includes</h4>
+            <ul class="tw-mb-8 md:tw-mb-0">
+              <li class="tw-mb-0">10-hour coverage</li>
+              <li class="tw-mb-0">Custom wedding photography timeline</li>
+              <li class="tw-mb-0">Online Gallery with Print Ordering</li>
+              <li class="tw-mb-0">10 x 10 Fine-Art Album</li>
+              <li class="tw-mb-0">Second Photographer</li>
+              <li class="tw-mb-0">35mm Film Photos</li>
             </ul>
           </div><a href="https://calendly.com/hello-farrah/discovery-call" target="_blank" rel="noopener noreferrer"
-            class="inline-block font-heading uppercase border border-black px-4 py-2 rounded-lg text-lg hover:bg-gray-lightest undefined">Set
+            class="tw-inline-block tw-font-heading tw-uppercase tw-border tw-border-black tw-px-4 tw-py-2 tw-rounded-lg tw-text-lg hover:tw-bg-gray-lightest">Set
             up a Consultation</a>
         </div>
       </section>
     </div>
 
-    <section class="px-4 py-24 text-center bg-tan">
-      <h2 class="mb-4 text-xl uppercase font-heading">What’s next?</h2>
-      <h3 class="mb-4 text-3xl font-display-serif md:text-5xl">Set Up a Consultation</h3>
-      <p class="max-w-sm mx-auto mb-8">I would love to find some time to talk about which collection interests you and
+    <section class="tw-px-4 tw-py-24 tw-text-center tw-bg-tan">
+      <h2 class="tw-mb-4 tw-text-xl tw-uppercase tw-font-heading">What’s next?</h2>
+      <h3 class="tw-mb-4 tw-text-3xl tw-font-display-serif md:tw-text-5xl">Set Up a Consultation</h3>
+      <p class="tw-max-w-sm tw-mx-auto tw-mb-8">I would love to find some time to talk about which collection interests you and
         ensure it’s the best fit.</p><a href="https://calendly.com/hello-farrah/discovery-call" target="_blank"
         rel="noopener noreferrer"
-        class="inline-block font-heading uppercase border border-black px-4 py-2 rounded-lg text-lg hover:bg-gray-lightest undefined">Let’s
+        class="tw-inline-block tw-font-heading tw-uppercase tw-border tw-border-black tw-px-4 tw-py-2 tw-rounded-lg tw-text-lg hover:tw-bg-gray-lightest">Let’s
         do it</a>
     </section>
 
-    <section class="px-4 py-24 text-center border-b border-black">
-      <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl leading-relaxed font-display-serif md:text-5xl"></h2>
-        <h3 class="max-w-4xl mx-auto text-3xl leading-relaxed font-display-sans md:text-5xl">The core of my approach is to
+    <section class="tw-px-4 tw-py-24 tw-text-center tw-border-b tw-border-black">
+      <div class="tw-max-w-5xl tw-mx-auto">
+        <h2 class="tw-text-3xl tw-leading-relaxed tw-font-display-serif md:tw-text-5xl"></h2>
+        <h3 class="tw-max-w-4xl tw-mx-auto tw-text-3xl tw-leading-relaxed tw-font-display-sans md:tw-text-5xl">The core of my approach is to
           document your wedding day artfully and genuinely while seeking out light and interaction.</h3>
       </div>
     </section>
 
-    <section class="flex flex-col border-b border-black md:flex-row">
-      <div class="flex flex-col justify-end w-full p-10 border-black md:w-2/3 md:border-r">
-        <div class="max-w-xl">
-          <h3 class="mb-4 text-lg uppercase font-heading">A little more About me</h3>
-          <p class="mb-8">I am thankful that at a young age, what started as a natural curiosity turned into a career that I
+    <section class="tw-flex tw-flex-col tw-border-b tw-border-black md:tw-flex-row">
+      <div class="tw-flex tw-flex-col tw-justify-end tw-w-full tw-p-10 tw-border-black md:tw-w-2/3 md:tw-border-r">
+        <div class="tw-max-w-xl">
+          <h3 class="tw-mb-4 tw-text-lg tw-uppercase tw-font-heading">A little more About me</h3>
+          <p class="tw-mb-8">I am thankful that at a young age, what started as a natural curiosity turned into a career that I
             truly enjoy. I have found my niche in documentary and editorial style wedding photography because of the way it
             produces meaningful and honest imagery that gets better over time. The two styles may seem like opposites but
             they compliment each other perfectly on a wedding day. I live in Southern California with my sweet husband Matt
             and when not working, we can be found enjoying the latest fun restaurant or finding a pretty trail to walk.</p>
         </div>
       </div>
-      <div class="w-full p-12 border-b border-black bg-tan md:w-1/3 md:border-b-0"><img class="block mb-0"
+      <div class="tw-w-full tw-p-12 tw-border-b tw-border-black tw-bg-tan md:tw-w-1/3 md:tw-border-b-0"><img class="tw-block tw-mb-0"
           src="https://res.cloudinary.com/ds9ng4srx/image/upload/v1601411479/Farrah/Film-40_uv6txz.png" alt="Farrah Power">
       </div>
     </section>
 
     <section>
-      <div class="container px-4 py-20 mx-auto">
-        <h1 class="mb-20 text-3xl text-center font-display-serif md:text-5xl">Frequently Asked Questions</h1>
-        <div class="max-w-lg mx-auto">
-          <div class="w-full mb-6 border-b border-black"><button
-              class="w-full focus:outline-none flex justify-between items-center">
-              <h2 class="font-display-sans text-xl mb-4 mr-4 text-left col-span-5 leading-7">Are you available to travel for
-                weddings?</h2><span class="font-display-sans text-xl mb-4 text-right">+</span>
+      <div class="tw-container tw-px-4 tw-py-20 tw-mx-auto">
+        <h1 class="tw-mb-20 tw-text-3xl tw-text-center tw-font-display-serif md:tw-text-5xl">Frequently Asked Questions</h1>
+        <div class="tw-max-w-lg tw-mx-auto">
+          <div class="tw-w-full tw-mb-6 tw-border-b tw-border-black"><button
+              class="tw-w-full focus:tw-outline-none tw-flex tw-justify-between tw-items-center">
+              <h2 class="tw-font-display-sans tw-text-xl tw-mb-4 tw-mr-4 tw-text-left tw-col-span-5 tw-leading-7">Are you available to travel for
+                weddings?</h2><span class="tw-font-display-sans tw-text-xl tw-mb-4 tw-text-right">+</span>
             </button>
-            <p class="mb-4" style="display: none;">
+            <p class="tw-mb-4" style="display: none;">
             <p>Absolutely! Seeing the world and having the opportunity to document such special memories combines both my
               love for travel as well as photography. Contact me for a custom quote for your destination wedding.</p>
             </p>
           </div>
-          <div class="w-full mb-6 border-b border-black"><button
-              class="w-full focus:outline-none flex justify-between items-center">
-              <h2 class="font-display-sans text-xl mb-4 mr-4 text-left col-span-5 leading-7">How do I book you?</h2><span
-                class="font-display-sans text-xl mb-4 text-right">+</span>
+          <div class="tw-w-full tw-mb-6 tw-border-b tw-border-black"><button
+              class="tw-w-full focus:tw-outline-none tw-flex tw-justify-between tw-items-center">
+              <h2 class="tw-font-display-sans tw-text-xl tw-mb-4 tw-mr-4 tw-text-left tw-col-span-5 tw-leading-7">How do I book you?</h2><span
+                class="tw-font-display-sans tw-text-xl tw-mb-4 tw-text-right">+</span>
             </button>
-            <p class="mb-4" style="display: none;">
+            <p class="tw-mb-4" style="display: none;">
             <p>Once you choose a collection alongside any add ons, I will send over a contract. A signed contract and 50%
               retainer will reserve your wedding date. (This includes any travel cost, if applicable.) The remaining balance
               will be due 30 days prior to your wedding.</p>
             </p>
           </div>
-          <div class="w-full mb-6 border-b border-black"><button
-              class="w-full focus:outline-none flex justify-between items-center">
-              <h2 class="font-display-sans text-xl mb-4 mr-4 text-left col-span-5 leading-7">Do you offer albums?</h2><span
-                class="font-display-sans text-xl mb-4 text-right">+</span>
+          <div class="tw-w-full tw-mb-6 tw-border-b tw-border-black"><button
+              class="tw-w-full focus:tw-outline-none tw-flex tw-justify-between tw-items-center">
+              <h2 class="tw-font-display-sans tw-text-xl tw-mb-4 tw-mr-4 tw-text-left tw-col-span-5 tw-leading-7">Do you offer albums?</h2><span
+                class="tw-font-display-sans tw-text-xl tw-mb-4 tw-text-right">+</span>
             </button>
-            <p class="mb-4" style="display: none;">
+            <p class="tw-mb-4" style="display: none;">
             <p>I am passionate about offering beautifully designed, museum quality albums to you! There is nothing like
               reliving the day through an album vs letting the images live on a screen. Albums added on at the time of
               booking are discounted 10%. Find out more information about albums here: <a
                 href="https://farrahpower.com/albums">Wedding Albums</a></p>
             </p>
           </div>
-          <div class="w-full mb-6 border-b border-black"><button
-              class="w-full focus:outline-none flex justify-between items-center">
-              <h2 class="font-display-sans text-xl mb-4 mr-4 text-left col-span-5 leading-7">How long does it take for my
-                photos to be delivered?</h2><span class="font-display-sans text-xl mb-4 text-right">+</span>
+          <div class="tw-w-full tw-mb-6 tw-border-b tw-border-black"><button
+              class="tw-w-full focus:tw-outline-none tw-flex tw-justify-between tw-items-center">
+              <h2 class="tw-font-display-sans tw-text-xl tw-mb-4 tw-mr-4 tw-text-left tw-col-span-5 tw-leading-7">How long does it take for my
+                photos to be delivered?</h2><span class="tw-font-display-sans tw-text-xl tw-mb-4 tw-text-right">+</span>
             </button>
-            <p class="mb-4" style="display: none;">
+            <p class="tw-mb-4" style="display: none;">
             <p>Your wedding photos will be delivered to your inbox no later than six weeks after your wedding date.
               Portraits will be delivered no later than two weeks after the session date.</p>
             </p>
           </div>
-          <div class="w-full mb-6 border-b border-black"><button
-              class="w-full focus:outline-none flex justify-between items-center">
-              <h2 class="font-display-sans text-xl mb-4 mr-4 text-left col-span-5 leading-7">Do you have insurance?</h2>
-              <span class="font-display-sans text-xl mb-4 text-right">+</span>
+          <div class="tw-w-full tw-mb-6 tw-border-b tw-border-black"><button
+              class="tw-w-full focus:tw-outline-none tw-flex tw-justify-between tw-items-center">
+              <h2 class="tw-font-display-sans tw-text-xl tw-mb-4 tw-mr-4 tw-text-left tw-col-span-5 tw-leading-7">Do you have insurance?</h2>
+              <span class="tw-font-display-sans tw-text-xl tw-mb-4 tw-text-right">+</span>
             </button>
-            <p class="mb-4" style="display: none;">
+            <p class="tw-mb-4" style="display: none;">
             <p>Yes, let me know if your venue requires proof of insurance and I’d be happy to send it over.</p>
             </p>
           </div>
-          <div class="w-full mb-6 border-b border-black"><button
-              class="w-full focus:outline-none flex justify-between items-center">
-              <h2 class="font-display-sans text-xl mb-4 mr-4 text-left col-span-5 leading-7">How many photos can we expect
+          <div class="tw-w-full tw-mb-6 tw-border-b tw-border-black"><button
+              class="tw-w-full focus:tw-outline-none tw-flex tw-justify-between tw-items-center">
+              <h2 class="font-display-sans text-xl mb-4 mr-4 tw-text-left tw-col-span-5 tw-leading-7">How many photos can we expect
                 from our wedding?</h2><span class="font-display-sans text-xl mb-4 text-right">+</span>
             </button>
             <p class="mb-4" style="display: none;">
@@ -166,35 +166,35 @@
               second photographer, etc. I am happy to send over some full wedding galleries for your reference.</p>
             </p>
           </div>
-          <div class="w-full mb-6 border-b border-black"><button
-              class="w-full focus:outline-none flex justify-between items-center">
-              <h2 class="font-display-sans text-xl mb-4 mr-4 text-left col-span-5 leading-7">Do you take formal family
-                portraits?</h2><span class="font-display-sans text-xl mb-4 text-right">+</span>
+          <div class="tw-w-full tw-mb-6 tw-border-b tw-border-black"><button
+              class="tw-w-full focus:tw-outline-none tw-flex tw-justify-between tw-items-center">
+              <h2 class="tw-font-display-sans tw-text-xl tw-mb-4 tw-mr-4 tw-text-left tw-col-span-5 tw-leading-7">Do you take formal family
+                portraits?</h2><span class="tw-font-display-sans tw-text-xl tw-mb-4 tw-text-right">+</span>
             </button>
-            <p class="mb-4" style="display: none;">
+            <p class="tw-mb-4" style="display: none;">
             <p>Yes, yes and yes! As I shoot the majority of the day in a photo-journalistic approach, family portraits are
               important for every wedding. As the day approaches I will ask you to send over a list of family members in
               order to make the family portraits go smoothly. These typically take place post ceremony however, I recommend
               taking as many as you can pre-ceremony so you can enjoy the moment right after saying “I do!”</p>
             </p>
           </div>
-          <div class="w-full mb-6 border-b border-black"><button
-              class="w-full focus:outline-none flex justify-between items-center">
-              <h2 class="font-display-sans text-xl mb-4 mr-4 text-left col-span-5 leading-7">Do we need to add on a second
-                photographer?</h2><span class="font-display-sans text-xl mb-4 text-right">+</span>
+          <div class="tw-w-full tw-mb-6 tw-border-b tw-border-black"><button
+              class="tw-w-full focus:tw-outline-none tw-flex tw-justify-between tw-items-center">
+              <h2 class="tw-font-display-sans tw-text-xl tw-mb-4 tw-mr-4 tw-text-left tw-col-span-5 tw-leading-7">Do we need to add on a second
+                photographer?</h2><span class="tw-font-display-sans tw-text-xl tw-mb-4 tw-text-right">+</span>
             </button>
-            <p class="mb-4" style="display: none;">
+            <p class="tw-mb-4" style="display: none;">
             <p>I shoot most weddings solo however if your guest count is over 150, when logistically It’d be impossible to
               have coverage in two places at once, or when you simply want extra coverage I would recommend adding on a
               second photographer.</p>
             </p>
           </div>
-          <div class="w-full mb-6 border-b border-black"><button
-              class="w-full focus:outline-none flex justify-between items-center">
-              <h2 class="font-display-sans text-xl mb-4 mr-4 text-left col-span-5 leading-7">How do I add 35mm &amp; 120mm
-                film to my wedding collection?</h2><span class="font-display-sans text-xl mb-4 text-right">+</span>
+          <div class="tw-w-full tw-mb-6 tw-border-b tw-border-black"><button
+              class="tw-w-full focus:tw-outline-none tw-flex tw-justify-between tw-items-center">
+              <h2 class="tw-font-display-sans tw-text-xl tw-mb-4 tw-mr-4 tw-text-left tw-col-span-5 tw-leading-7">How do I add 35mm &amp; 120mm
+                film to my wedding collection?</h2><span class="tw-font-display-sans tw-text-xl tw-mb-4 tw-text-right">+</span>
             </button>
-            <p class="mb-4" style="display: none;">
+            <p class="tw-mb-4" style="display: none;">
             <p>You can add 35mm &amp; 120mm film onto your collection directly in your quote that will be sent to you after
               your consultation. </p>
             </p>
@@ -203,54 +203,54 @@
       </div>
     </section>
 
-    <section class="flex flex-col items-center justify-center text-center py-12 w-full md:pt-64">
-      <div class="px-4">
-        <h2 class="font-heading uppercase text-3xl mb-4 tracking-wide">Heirloom Albums</h2>
-        <h3 class="font-display-serif text-3xl md:text-5xl mb-4">The process from beginning to the final product</h3>
-        <p class="max-w-lg mx-auto mb-6">Each album is designed to uniquely tell each wedding day story. I design the book
+    <section class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-text-center tw-py-12 tw-w-full md:tw-pt-64">
+      <div class="tw-px-4">
+        <h2 class="tw-font-heading tw-uppercase tw-text-3xl tw-mb-4 tw-tracking-wide">Heirloom Albums</h2>
+        <h3 class="tw-font-display-serif tw-text-3xl md:tw-text-5xl tw-mb-4">The process from beginning to the final product</h3>
+        <p class="tw-max-w-lg tw-mx-auto tw-mb-6">Each album is designed to uniquely tell each wedding day story. I design the book
           with you. I want you to have control over the colors, materials, and photo selections to create something truly
           special. There is nothing like seeing the images come to life on paper to relive the day and share with others.
         </p>
-        <p class="mb-32">10% discount on albums at the time of booking</p>
+        <p class="tw-mb-32">10% discount on albums at the time of booking</p>
       </div>
       <div class="css-1vz5fec e1le119b0"
         style="background-image: url(&quot;https://res.cloudinary.com/ds9ng4srx/image/upload/v1598026377/Farrah/album_bg_m4eiih.png&quot;);">
       </div>
-      <div class="px-4">
-        <ul class="max-w-md md:text-left">
-          <li class="grid md:grid-cols-4 mb-12">
-            <h2 class="text-6xl">1</h2>
-            <div class="md:col-span-3">
-              <h3 class="text-4xl">Customization</h3>
+      <div class="tw-px-4">
+        <ul class="tw-max-w-md md:tw-text-left">
+          <li class="tw-grid md:tw-grid-cols-4 tw-mb-12">
+            <h2 class="tw-text-6xl">1</h2>
+            <div class="md:tw-col-span-3">
+              <h3 class="tw-text-4xl">Customization</h3>
               <p>You will pick out colors, fonts, etc. through the form below to start your album making process.</p>
             </div>
           </li>
-          <li class="grid md:grid-cols-4 mb-12">
-            <h2 class="text-6xl">2</h2>
-            <div class="md:col-span-3">
-              <h3 class="text-4xl">Pick Favorites</h3>
+          <li class="tw-grid md:tw-grid-cols-4 tw-mb-12">
+            <h2 class="tw-text-6xl">2</h2>
+            <div class="md:tw-col-span-3">
+              <h3 class="tw-text-4xl">Pick Favorites</h3>
               <p>Browse your online gallery and favorite 50-70 images using the heart shaped icon on the top of the image.
               </p>
             </div>
           </li>
-          <li class="grid md:grid-cols-4 mb-12">
-            <h2 class="text-6xl">3</h2>
-            <div class="md:col-span-3">
-              <h3 class="text-4xl">First Draft</h3>
+          <li class="tw-grid md:tw-grid-cols-4 tw-mb-12">
+            <h2 class="tw-text-6xl">3</h2>
+            <div class="md:tw-col-span-3">
+              <h3 class="tw-text-4xl">First Draft</h3>
               <p>I will design the first draft using your favorited images and send it to you via email.</p>
             </div>
           </li>
-          <li class="grid md:grid-cols-4 mb-12">
-            <h2 class="text-6xl">4</h2>
-            <div class="md:col-span-3">
-              <h3 class="text-4xl">Editing Process</h3>
+          <li class="tw-grid md:tw-grid-cols-4 tw-mb-12">
+            <h2 class="tw-text-6xl">4</h2>
+            <div class="md:tw-col-span-3">
+              <h3 class="tw-text-4xl">Editing Process</h3>
               <p>You will have up to three rounds of iterations to edit the album until its just how you like it.</p>
             </div>
           </li>
-          <li class="grid md:grid-cols-4 mb-12">
-            <h2 class="text-6xl">5</h2>
-            <div class="md:col-span-3">
-              <h3 class="text-4xl">Enjoy your Album!</h3>
+          <li class="tw-grid md:tw-grid-cols-4 tw-mb-12">
+            <h2 class="tw-text-6xl">5</h2>
+            <div class="md:tw-col-span-3">
+              <h3 class="tw-text-4xl">Enjoy your Album!</h3>
               <p>Your beautifully designed album will arrive at your doorstep no later than five weeks after being submitted
                 to the lab.</p>
             </div>
@@ -259,21 +259,21 @@
       </div>
     </section>
 
-    <section class="flex flex-col items-center py-24">
-      <h2 class="mb-8 text-3xl text-center font-display-sans md:text-5xl">Think we would work well together?</h2><a
-        class="inline-block font-heading uppercase border border-black px-4 py-2 rounded-lg text-lg hover:bg-gray-lightest undefined"
+    <section class="tw-flex tw-flex-col tw-items-center tw-py-24">
+      <h2 class="tw-mb-8 tw-text-3xl tw-text-center tw-font-display-sans md:tw-text-5xl">Think we would work well together?</h2><a
+        class="tw-inline-block tw-font-heading tw-uppercase tw-border tw-border-black tw-px-4 tw-py-2 tw-rounded-lg tw-text-lg hover:tw-bg-gray-lightest tw-undefined"
         href="/contact">Contact Me</a>
-      <div class="flex w-screen mt-12">
-        <div class="bg-cover bg-center h-24 md:h-64 w-1/2 md:w-1/4 mr-4 md:mr-12"
+      <div class="tw-flex tw-w-screen tw-mt-12">
+        <div class="tw-bg-cover tw-bg-center tw-h-24 md:tw-h-64 tw-w-1/2 md:tw-w-1/4 tw-mr-4 md:tw-mr-12"
           style="background-image: url(&quot;https://res.cloudinary.com/ds9ng4srx/image/upload/v1585508209/Farrah/slider-1_wcdg7q.png&quot;);">
         </div>
-        <div class="bg-cover bg-center h-24 md:h-64 w-1/2 md:w-1/4 mr-4 md:mr-12"
+        <div class="tw-bg-cover tw-bg-center tw-h-24 md:tw-h-64 tw-w-1/2 md:tw-w-1/4 tw-mr-4 md:tw-mr-12"
           style="background-image: url(&quot;https://res.cloudinary.com/ds9ng4srx/image/upload/v1585508210/Farrah/slider-3_nkk1pi.png&quot;);">
         </div>
-        <div class="bg-cover bg-center h-24 md:h-64 w-1/2 md:w-1/4 mr-4 md:mr-12"
+        <div class="tw-bg-cover tw-bg-center tw-h-24 md:tw-h-64 tw-w-1/2 md:tw-w-1/4 tw-mr-4 md:tw-mr-12"
           style="background-image: url(&quot;https://res.cloudinary.com/ds9ng4srx/image/upload/v1585508210/Farrah/slider-4_ctmw3j.png&quot;);">
         </div>
-        <div class="bg-cover bg-center h-24 md:h-64 w-1/2 md:w-1/4 mr-0"
+        <div class="tw-bg-cover tw-bg-center tw-h-24 md:tw-h-64 tw-w-1/2 md:tw-w-1/4 tw-mr-0"
           style="background-image: url(&quot;https://res.cloudinary.com/ds9ng4srx/image/upload/v1585508211/Farrah/Slider-2_lgqomj.png&quot;);">
         </div>
       </div>
