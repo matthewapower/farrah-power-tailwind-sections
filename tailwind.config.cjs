@@ -3,6 +3,7 @@
 let plugin = require("tailwindcss/plugin");
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  important: true,
   theme: {
     extend: {
       fontFamily: {
@@ -19,7 +20,6 @@ module.exports = {
   },
   plugins: [
     plugin(function ({ addVariant }) {
-      // Add a `child` variant, ie. `child:pb-0`
       addVariant("child", "& *");
     }),
   ],
