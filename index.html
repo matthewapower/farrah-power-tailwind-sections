@@ -46,18 +46,18 @@
           <div class="md:tw-w-1/2 md:tw-pr-4">
             <h2 class="tw-mb-4 tw-text-3xl tw-font-display-serif md:tw-text-5xl">Collection One</h2>
             <p class="tw-mb-4 tw-text-3xl tw-font-display-sans">$000</p>
-            <p class="tw-mb-8">All day coverage from getting ready up until the grand exit. This collection is perfect if you
+            <p class="tw-mb-8 tw-leading-6 tw-text-base">All day coverage from getting ready up until the grand exit. This collection is perfect if you
               want everything documented along with 35mm film and a beautifully designed heirloom album.</p>
           </div>
-          <div class="md:tw-w-1/2">
-            <h4 class="tw-mb-4 tw-text-lg tw-uppercase tw-font-heading md:tw-mt-20">Includes</h4>
-            <ul class="tw-mb-8 md:tw-mb-0">
-              <li class="tw-mb-0">10-hour coverage</li>
-              <li class="tw-mb-0">Custom wedding photography timeline</li>
-              <li class="tw-mb-0">Online Gallery with Print Ordering</li>
-              <li class="tw-mb-0">10 x 10 Fine-Art Album</li>
-              <li class="tw-mb-0">Second Photographer</li>
-              <li class="tw-mb-0">35mm Film Photos</li>
+          <div class="md:tw-w-1/2 md:tw-pl-4">
+            <h4 class="tw-mb-4 tw-text-base tw-uppercase tw-font-heading md:tw-mt-20">Includes</h4>
+            <ul class="tw-mb-8 md:tw-mb-0 child:tw-list-disc">
+              <li class="tw-mb-0 tw-leading-6 tw-text-base">10-hour coverage</li>
+              <li class="tw-mb-0 tw-leading-6 tw-text-base">Custom wedding photography timeline</li>
+              <li class="tw-mb-0 tw-leading-6 tw-text-base">Online Gallery with Print Ordering</li>
+              <li class="tw-mb-0 tw-leading-6 tw-text-base">10 x 10 Fine-Art Album</li>
+              <li class="tw-mb-0 tw-leading-6 tw-text-base">Second Photographer</li>
+              <li class="tw-mb-0 tw-leading-6 tw-text-base">35mm Film Photos</li>
             </ul>
           </div><a href="https://calendly.com/hello-farrah/discovery-call" target="_blank" rel="noopener noreferrer"
             class="tw-inline-block tw-font-heading tw-uppercase tw-border tw-border-black tw-px-4 tw-py-2 tw-rounded-lg tw-text-lg hover:tw-bg-gray-lightest">Set
@@ -66,15 +66,26 @@
       </section>
     </div>
 
-    <section class="tw-px-4 tw-py-24 tw-text-center tw-bg-tan">
-      <h2 class="tw-mb-4 tw-text-xl tw-uppercase tw-font-heading">What’s next?</h2>
-      <h3 class="tw-mb-4 tw-text-3xl tw-font-display-serif md:tw-text-5xl">Set Up a Consultation</h3>
-      <p class="tw-max-w-sm tw-mx-auto tw-mb-8">I would love to find some time to talk about which collection interests you and
-        ensure it’s the best fit.</p><a href="https://calendly.com/hello-farrah/discovery-call" target="_blank"
-        rel="noopener noreferrer"
-        class="tw-inline-block tw-font-heading tw-uppercase tw-border tw-border-black tw-px-4 tw-py-2 tw-rounded-lg tw-text-lg hover:tw-bg-gray-lightest">Let’s
-        do it</a>
-    </section>
+    <div 
+      class="tw-group tw-relative" 
+      x-data="{ content: 'COPY' }"
+    >
+      <button 
+        class="tw-absolute tw-top-0 tw-right-0 tw-m-4 tw-bg-gray-500 tw-text-white tw-p-2 tw-rounded active:tw-bg-gray-600 tw-uppercase tw-hidden group-hover:tw-block"
+        @click="navigator.clipboard.writeText($refs.section.outerHTML.replace(/>\s+</g,'><').replace(/<img(.*?)>/g, '{image 1}')); content = 'COPIED!'"
+        @mouseleave="content = 'COPY'"
+        x-text="content"
+      ></button>
+      <section class="tw-px-4 tw-py-24 tw-text-center tw-bg-tan" x-ref="section">
+        <h2 class="tw-mb-4 tw-text-xl tw-uppercase tw-font-heading">What’s next?</h2>
+        <h3 class="tw-mb-4 tw-text-3xl tw-font-display-serif md:tw-text-5xl">Set Up a Consultation</h3>
+        <p class="tw-max-w-sm tw-mx-auto tw-mb-8">I would love to find some time to talk about which collection interests you and
+          ensure it’s the best fit.</p><a href="https://calendly.com/hello-farrah/discovery-call" target="_blank"
+          rel="noopener noreferrer"
+          class="tw-inline-block tw-font-heading tw-uppercase tw-border tw-border-black tw-px-4 tw-py-2 tw-rounded-lg tw-text-lg hover:tw-bg-gray-lightest">Let’s
+          do it</a>
+      </section>
+    </div>
 
     <section class="tw-px-4 tw-py-24 tw-text-center tw-border-b tw-border-black">
       <div class="tw-max-w-5xl tw-mx-auto">
