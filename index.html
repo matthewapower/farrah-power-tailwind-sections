@@ -8,7 +8,7 @@
 
     <style type="text/css">@font-face{font-family:garamond-premier-pro-display;src:url(https://use.typekit.net/af/9f2fb4/00000000000000003b9ade33/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/9f2fb4/00000000000000003b9ade33/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/9f2fb4/00000000000000003b9ade33/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:garamond-premier-pro;src:url(https://use.typekit.net/af/e2b8db/00000000000000003b9ade23/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/e2b8db/00000000000000003b9ade23/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/e2b8db/00000000000000003b9ade23/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:poppins;src:url(https://use.typekit.net/af/e41b92/00000000000000003b9b1378/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/e41b92/00000000000000003b9b1378/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/e41b92/00000000000000003b9b1378/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:poppins;src:url(https://use.typekit.net/af/b45ee0/00000000000000003b9b137e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b45ee0/00000000000000003b9b137e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b45ee0/00000000000000003b9b137e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:neue-haas-grotesk-display;src:url(https://use.typekit.net/af/9395af/00000000000000003b9b2046/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/9395af/00000000000000003b9b2046/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/9395af/00000000000000003b9b2046/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}</style>
   </head>
-  <body>
+  <body class="tw-pt-[68px]">
     <!-- <header class="tw-p-4 tw-flex tw-justify-center tw-items-center tw-gap-12 tw-font-body tw-fixed tw-top-2 tw-left-1/2 tw-transform -tw-translate-x-1/2 tw-bg-white tw-z-50 tw-rounded">
       <a  href="/">
         <h1>
@@ -31,7 +31,7 @@
     <header 
     	x-data
       x-ref="header"
-      x-init="document.querySelector('body').style.paddingTop = $refs.header.clientHeight + 'px'"
+      disabled-x-init="document.querySelector('body').style.paddingTop = $refs.header.clientHeight + 'px'"
       class="tw-p-4 tw-py-6 tw-flex tw-flex-col lg:tw-flex-row tw-justify-center tw-items-center lg:tw-gap-12 tw-font-body tw-fixed tw-top-0 tw-inset-x-0 tw-bg-white tw-z-50"
     >
       <a class="tw-relative tw-z-[51]" href="/">
@@ -47,7 +47,7 @@
         <li><a href="#">Work</a></li>
         <li><a href="#">Info</a></li>
       </ul>
-      <ul class="tw-hidden lg:tw-flex tw-flex-col lg:tw-flex-row tw-flex-grow tw-justify-center tw-gap-4">
+      <ul class="tw-hidden lg:tw-flex tw-flex-col lg:tw-flex-row tw-justify-center tw-gap-4">
         <li><a href="#">Prints</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
