@@ -4,7 +4,7 @@ let plugin = require("tailwindcss/plugin");
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   prefix: "tw-",
-  // important: true,
+  important: true,
   theme: {
     extend: {
       fontFamily: {
