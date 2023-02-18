@@ -12,7 +12,7 @@ a:active {
 }
 
 .page a.active {
-	opacity: .4;
+	opacity: 1;
 }
 
 i,
