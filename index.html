@@ -112,8 +112,24 @@
       </div>
     </header>
 
-    <div class="tw-w-full tw-h-[50vh] tw-overflow-hidden header--over-top">
-      <img class="tw-object-cover tw-object-center tw-w-full tw-h-full" src="https://res.cloudinary.com/ds9ng4srx/image/upload/v1585608957/Farrah/Fleischer_286_of_798_Fleischer_286_of_798_fnbzgw.jpg">
+    <div 
+      class="tw-group tw-relative" 
+      x-data="{ content: 'COPY' }"
+    >
+      <button 
+        class="tw-absolute tw-bottom-0 tw-right-0 tw-m-4 tw-bg-gray-500 tw-text-white tw-p-2 tw-rounded active:tw-bg-gray-600 tw-uppercase tw-hidden group-hover:tw-block tw-z-50"
+        @click="navigator.clipboard.writeText($refs.section.outerHTML.replace(/>\s+</g,'><').replace(/<img(.*?)>/g, '{image 1}')); content = 'COPIED!'"
+        @mouseleave="content = 'COPY'"
+        x-text="content"
+      ></button>
+      <section class="tw-w-full tw-min-h-[50vh] tw-max-h-[80vh] tw-overflow-hidden header--over-top tw-relative" x-ref="section">
+        <div class="child:tw-object-cover child:tw-object-center child:tw-w-full child:tw-h-full">
+          <img class="" src="https://res.cloudinary.com/ds9ng4srx/image/upload/v1585608957/Farrah/Fleischer_286_of_798_Fleischer_286_of_798_fnbzgw.jpg">
+        </div>
+        <div class="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center tw-text-white">
+          <h2 class="tw-font-display-serif tw-text-3xl">About Farrah</h2> 
+        </div>
+      </section>
     </div>
 
     <div 
@@ -443,14 +459,14 @@
         <nav class="-tw-mb-6 tw-columns-2 sm:tw-flex sm:tw-justify-center sm:tw-space-x-12" aria-label="Footer">
           <template x-for="link in links">
             <div class="tw-pb-6 first-of-type:tw-ml-[0_!important] first-of-type">
-              <a :href="link.href" class="tw-font-heading tw-leading-6 tw-text-gray-600 hover:tw-text-black" x-text="link.name"></a>
+              <a :href="link.href" class="tw-cursor-pointer tw-font-heading tw-leading-6 tw-text-gray-600 hover:tw-text-black" x-text="link.name"></a>
             </div>
           </template>
         </nav>
         <div class="tw-mt-10 tw-flex tw-justify-center tw-space-x-10 tw-font-heading">
 
           <template x-for="link in socialLinks">
-            <a :href="link.href" class="first-of-type:tw-ml-[0_!important] first-of-type tw-text-gray-400 hover:tw-text-black">
+            <a :href="link.href" class="tw-cursor-pointer first-of-type:tw-ml-[0_!important] first-of-type tw-text-gray-400 hover:tw-text-black">
               <span class="tw-sr-only" x-text="link.name"></span>
               <span x-html="link.icon"></span> 
             </a>

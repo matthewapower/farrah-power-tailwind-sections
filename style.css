@@ -35,9 +35,9 @@
   transition: 300ms transform !important;
 }
 
-.header + *:not(.header--over-top) {
-  margin-top: 68px;
-}
+/* .header + *:not(.header--over-top) { */
+/*   margin-top: 68px; */
+/* } */
 
 .header--transparent[state="top"] {
   background: transparent !important;
