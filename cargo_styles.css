@@ -97,7 +97,7 @@ hr {
  * Editor styles
  */
 
-bodycopy {
+[data-predefined-style="true"] bodycopy {
 	font-size: 1.3rem;
 	font-weight: 500;
 	color: rgba(0, 0, 0, 0.85);
@@ -107,12 +107,12 @@ bodycopy {
 	font-variation-settings: 'slnt' 0, 'MONO' 0;
 }
 
-bodycopy a {
+[data-predefined-style="true"] bodycopy a {
 	color: rgba(0, 0, 0, 0.85);
 	text-decoration: none;
 }
 
-bodycopy a:hover {
+[data-predefined-style="true"] bodycopy a:hover {
 
 }
 
@@ -124,7 +124,7 @@ bodycopy a.icon-link:hover {
 	padding-bottom: 0;
 }
 
-h1 {
+[data-predefined-style="true"] h1 {
 	font-family: "Diatype Variable", Icons;
 	font-style: normal;
 	font-weight: 400;
@@ -137,12 +137,12 @@ h1 {
 	font-variation-settings: 'slnt' 0, 'MONO' 0;
 	}
 
-h1 a {
+[data-predefined-style="true"] h1 a {
     border: 0;
 	color: rgba(0, 0, 0, 0.85);
 }
 
-h2 {
+[data-predefined-style="true"] h2 {
 	font-family: "Diatype Variable", Icons;
 	font-style: normal;
 	font-weight: 400;
@@ -154,12 +154,12 @@ h2 {
 	font-variation-settings: 'slnt' 0, 'MONO' 0;
 	}
 
-h2 a {
+[data-predefined-style="true"] h2 a {
     border: 0;
 	color: rgba(0, 0, 0, 0.85);
 }
 
-small {
+[data-predefined-style="true"] small {
 	display: inline-block;
 	font-size: 1.1rem;
 	line-height: 1.2;
@@ -171,7 +171,7 @@ small {
 	font-variation-settings: 'slnt' 0, 'MONO' 0.5;
 }
 
-small a {
+[data-predefined-style="true"] small a {
     border: 0;
 	color: rgb(0, 0, 0);
 }
@@ -723,60 +723,3 @@ body.mobile .audio-player {
 	}
 }
 
-
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.css-wc8u6p {
-  width: 100%;
-  padding: 30px;
-  display: flex;
-  align-items: flex-end;
-  -webkit-box-pack: end;
-  justify-content: flex-end;
-  min-height: 300px;
-  border-bottom: 1px solid black;
-}
-
-.css-wc8u6p h1 {
-  font-size: 60px;
-  font-weight: 500;
-}
-
-.css-9uocch {
-  width: 100%;
-  min-height: 80vh;
-  background-size: cover;
-  background-position: center center;
-  border-bottom-width: 1px;
-  border-color: rgb(0, 0, 0);
-}
-
-[style*="display: none"] {
-  display: none !important;
-}
-
-.header {
-  transition: 300ms transform !important;
-}
-
-/* .header + *:not(.header--over-top) { */
-/*   margin-top: 68px; */
-/* } */
-
-.header--transparent[state="top"] {
-  background: transparent !important;
-  color: white !important;
-}
-
-.header--transparent[state="top"] [state="open"] {
-  color: black !important;
-}
-
-@media (min-width: 1024px) {
-  .header[state="content"] {
-    transform: translateY(-100%) !important;
-  }
-}
