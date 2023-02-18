@@ -5,7 +5,6 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <link href="https://farrahpower.photography/stylesheet?c=2266550210&amp;1674611159" id="member_stylesheet" rel="stylesheet" type="text/css">
     <style type="text/css">@font-face{font-family:garamond-premier-pro-display;src:url(https://use.typekit.net/af/9f2fb4/00000000000000003b9ade33/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/9f2fb4/00000000000000003b9ade33/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/9f2fb4/00000000000000003b9ade33/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:garamond-premier-pro;src:url(https://use.typekit.net/af/e2b8db/00000000000000003b9ade23/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/e2b8db/00000000000000003b9ade23/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/e2b8db/00000000000000003b9ade23/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:poppins;src:url(https://use.typekit.net/af/e41b92/00000000000000003b9b1378/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/e41b92/00000000000000003b9b1378/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/e41b92/00000000000000003b9b1378/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:poppins;src:url(https://use.typekit.net/af/b45ee0/00000000000000003b9b137e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b45ee0/00000000000000003b9b137e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b45ee0/00000000000000003b9b137e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:neue-haas-grotesk-display;src:url(https://use.typekit.net/af/9395af/00000000000000003b9b2046/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/9395af/00000000000000003b9b2046/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/9395af/00000000000000003b9b2046/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}</style>
   </head>
   <body class="">
@@ -114,13 +113,19 @@
 
     <div 
       class="tw-group tw-relative" 
-      x-data="{ content: 'COPY' }"
+      x-data="{ content: 'COPY', stylesheetContent: 'Copy Stylesheet' }"
     >
       <button 
         class="tw-absolute tw-bottom-0 tw-right-0 tw-m-4 tw-bg-gray-500 tw-text-white tw-p-2 tw-rounded active:tw-bg-gray-600 tw-uppercase tw-hidden group-hover:tw-block tw-z-50"
         @click="navigator.clipboard.writeText($refs.section.outerHTML.replace(/>\s+</g,'><').replace(/<img(.*?)>/g, '{image 1}')); content = 'COPIED!'"
         @mouseleave="content = 'COPY'"
         x-text="content"
+      ></button>
+      <button 
+        class="tw-absolute tw-bottom-0 tw-left-0 tw-m-4 tw-bg-gray-500 tw-text-white tw-p-2 tw-rounded active:tw-bg-gray-600 tw-uppercase tw-hidden group-hover:tw-block tw-z-50"
+        @click="navigator.clipboard.writeText(document.querySelector('link[href*=index]') && document.querySelector('link[href*=index]').href); stylesheetContent = 'COPIED!'"
+        @mouseleave="stylesheetContent = 'COPY STYLESHEET'"
+        x-text="stylesheetContent"
       ></button>
       <section class="tw-w-full tw-min-h-[50vh] tw-max-h-[80vh] tw-overflow-hidden header--over-top tw-relative" x-ref="section">
         <div class="child:tw-object-cover child:tw-object-center child:tw-w-full child:tw-h-full">
