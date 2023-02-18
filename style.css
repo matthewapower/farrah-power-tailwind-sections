@@ -26,3 +26,30 @@
   border-bottom-width: 1px;
   border-color: rgb(0, 0, 0);
 }
+
+[style*="display: none"] {
+  display: none !important;
+}
+
+.header {
+  transition: 300ms transform !important;
+}
+
+.header + *:not(.header--over-top) {
+  margin-top: 68px;
+}
+
+.header--transparent[state="top"] {
+  background: transparent !important;
+  color: white !important;
+}
+
+.header--transparent[state="top"] [state="open"] {
+  color: black !important;
+}
+
+@media (min-width: 1024px) {
+  .header[state="content"] {
+    transform: translateY(-100%) !important;
+  }
+}
