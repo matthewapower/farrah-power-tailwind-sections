@@ -324,17 +324,19 @@
         @mouseleave="content = 'COPY'"
         x-text="content"
       ></button>
+
       <section 
         class="tw-py-36" 
         x-ref="section"
-        x-data="{
-          currentForm: false,
-          forms: ['weddings', 'portraits', 'other']
-        }"
       >
-        <button @click="currentForm = false">Cancel</button>
+        <div
+          x-data="{
+            currentForm: false,
+            forms: ['weddings', 'portraits', 'other']
+          }"
+        >
+          
 
-        <div>
           <h2 class="tw-mb-20 tw-text-3xl tw-text-center tw-font-display-serif md:tw-text-5xl">What would you like to inquire about?</h2>
           <div class="tw-flex tw-items-center tw-justify-center">
             <select x-model="currentForm" class="tw-inline-block tw-font-heading tw-border tw-border-black tw-pl-2.5 tw-uppercase tw-py-2 tw-rounded-lg tw-text-lg hover:tw-bg-gray-lightest tw-mb-12">
@@ -343,20 +345,19 @@
               </template>
             </select>
           </div>
-        </div>
 
-        <div x-show="currentForm == 'weddings'">
-          <iframe class="tw-w-full tw-min-h-screen" src="https://tave.com/farrah-power-inline/contact/4d107a?tpl=20200217&amp;resizer=4.2.1"></iframe>
-        </div>
+          <template x-if="currentForm == 'weddings'">
+            <iframe class="tw-w-full tw-min-h-screen" src="https://tave.com/farrah-power-inline/contact/4d107a?tpl=20200217&amp;resizer=4.2.1"></iframe>
+          </template>
 
-        <div x-show="currentForm == 'portraits'">
-          <iframe class="tw-w-full tw-min-h-screen" src="https://tave.com/farrah-power-inline/contact/contact?tpl=20200217&resizer=4.2.1" class="embedded-form__StyledIframe-sc-k7dw8e-0 fjbHRO"></iframe>
-        </div>
+          <template x-if="currentForm == 'portraits'">
+            <iframe class="tw-w-full tw-min-h-screen" src="https://tave.com/farrah-power-inline/contact/contact?tpl=20200217&resizer=4.2.1" class="embedded-form__StyledIframe-sc-k7dw8e-0 fjbHRO"></iframe>
+          </template>
 
-        <div x-show="currentForm == 'other'">
-          <iframe class="tw-w-full tw-min-h-screen" src="https://tave.com/farrah-power-inline/contact/9432a0?tpl=20200217&resizer=4.2.1" class="embedded-form__StyledIframe-sc-k7dw8e-0 fjbHRO"></iframe>
+          <template x-if="currentForm == 'other'">
+            <iframe class="tw-w-full tw-min-h-screen" src="https://tave.com/farrah-power-inline/contact/9432a0?tpl=20200217&resizer=4.2.1" class="embedded-form__StyledIframe-sc-k7dw8e-0 fjbHRO"></iframe>
+          </template>
         </div>
-
       </section>
     </div>
 
