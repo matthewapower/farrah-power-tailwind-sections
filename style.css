@@ -101,7 +101,7 @@ bodycopy {
 	font-size: 1.3rem;
 	font-weight: 500;
 	color: rgba(0, 0, 0, 0.85);
-	font-family: "Diatype Variable", Icons;
+	font-family: 'garamond-premier-pro',serif;
 	font-style: normal;
 	line-height: 1.2;
 	font-variation-settings: 'slnt' 0, 'MONO' 0;
@@ -125,7 +125,7 @@ bodycopy a.icon-link:hover {
 }
 
 h1 {
-	font-family: "Diatype Variable", Icons;
+  @apply tw-font-display-serif;
 	font-style: normal;
 	font-weight: 400;
 	padding: 0;
@@ -143,7 +143,7 @@ h1 a {
 }
 
 h2 {
-	font-family: "Diatype Variable", Icons;
+  @apply tw-font-display-serif;
 	font-style: normal;
 	font-weight: 400;
 	padding: 0;
@@ -157,6 +157,14 @@ h2 {
 h2 a {
     border: 0;
 	color: rgba(0, 0, 0, 0.85);
+}
+
+h1, h2, h3, h4, h5 {
+  @apply tw-font-display-serif;
+}
+
+p {
+  @apply tw-font-body;
 }
 
 small {
@@ -790,3 +798,4 @@ select {
     transform: translateY(-100%) !important;
   }
 }
+
