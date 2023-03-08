@@ -1,3 +1,8 @@
+root {
+  --obj-pos: 50% 50%;
+  --obj-pos-lg: 50% 50%;
+}
+
 #toolset {
 	display: none;
 }
@@ -785,7 +790,7 @@ select {
 /* } */
 
 .header--transparent[state="top"] {
-  background: transparent !important;
+  background: linear-gradient(180deg, rgba(0,0,0,.3), transparent) !important;
   color: white !important;
 }
 
@@ -793,9 +798,21 @@ select {
   color: black !important;
 }
 
+
+
+.img-obj-wrapper img {
+  object-fit: cover !important;
+  object-position: var(--obj-pos) !important;
+}
+
 @media (min-width: 1024px) {
   .header[state="content"] {
     transform: translateY(-100%) !important;
+  }
+
+  .img-obj-wrapper img {
+    object-fit: cover !important;
+    object-position: var(--obj-pos-lg) !important;
   }
 }
 

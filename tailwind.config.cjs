@@ -21,7 +21,9 @@ module.exports = {
   },
   plugins: [
     plugin(function ({ addVariant }) {
-      addVariant("child", "& *");
+      addVariant("child", "& *")
+      addVariant("slick-active", "&.slick-active")
+      addVariant("group-slick-active", ":merge(.group).slick-active &")
     }),
   ],
 };
