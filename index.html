@@ -8,7 +8,7 @@
     <style type="text/css">@font-face{font-family:garamond-premier-pro-display;src:url(https://use.typekit.net/af/9f2fb4/00000000000000003b9ade33/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/9f2fb4/00000000000000003b9ade33/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/9f2fb4/00000000000000003b9ade33/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:garamond-premier-pro;src:url(https://use.typekit.net/af/e2b8db/00000000000000003b9ade23/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/e2b8db/00000000000000003b9ade23/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/e2b8db/00000000000000003b9ade23/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:poppins;src:url(https://use.typekit.net/af/e41b92/00000000000000003b9b1378/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/e41b92/00000000000000003b9b1378/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/e41b92/00000000000000003b9b1378/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:poppins;src:url(https://use.typekit.net/af/b45ee0/00000000000000003b9b137e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b45ee0/00000000000000003b9b137e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b45ee0/00000000000000003b9b137e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:neue-haas-grotesk-display;src:url(https://use.typekit.net/af/9395af/00000000000000003b9b2046/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/9395af/00000000000000003b9b2046/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/9395af/00000000000000003b9b2046/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}</style>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   </head>
-  <body class="">
+  <body class="" data-adminview>
     <header 
       x-data="{
         links: [
@@ -144,44 +144,45 @@
     >
       <button 
         class="tw-absolute tw-bottom-0 tw-right-0 tw-m-4 tw-bg-gray-500 tw-text-white tw-p-2 tw-rounded active:tw-bg-gray-600 tw-uppercase tw-hidden group-hover:tw-block tw-z-50"
-        @click="navigator.clipboard.writeText($refs.section.outerHTML.replace(/>\s+</g,'><').replace(/<img(.*?)>/g, '{image 1}')); content = 'COPIED!'"
+        @click="navigator.clipboard.writeText($refs.section.innerHTML.replace(/<img(.*?)>/g, '{image 1}')); content = 'COPIED!'"
         @mouseleave="content = 'COPY'"
         x-text="content"
       ></button>
-      <section 
-        class="" 
-        x-ref="section" 
-        x-init="if (!document.querySelector('[data-adminview=true]')) { $($el).slick({ speed: 1000, autoplaySpeed: 5000, autoplay: true, arrows: false, fade: true}); }"
-      >
-        <article class="tw-min-h-[500px] tw-max-h-[80vh] tw-overflow-hidden header--over-top tw-relative">
-          <div class="img-obj-wrapper tw-absolute tw-inset-0 child:tw-object-cover child:tw-w-full child:tw-h-full">
-            <img class="" src="https://res.cloudinary.com/ds9ng4srx/image/upload/v1585608957/Farrah/Fleischer_286_of_798_Fleischer_286_of_798_fnbzgw.jpg">
-          </div>
-          <div class="tw-absolute tw-bottom-0 tw-left-0 tw-flex tw-p-8 tw-flex-col  tw-items-start tw-justify-end tw-text-left tw-text-white tw-pointer-events-none">
-            <h2 class="tw-opacity-0 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[500ms] tw-transition-opacity tw-mb-4 tw-text-white tw-text-3xl tw-font-display-serif md:tw-text-5xl">Set Up a Consultation</h2>
-            <p class="tw-opacity-0 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[525ms] tw-transition-opacity tw-max-w-sm tw-mb-8 tw-leading-6 tw-text-base">I would love to find some time to talk about which collection interests you and
-              ensure it’s the best fit.</p>
-            <a href="https://calendly.com/hello-farrah/discovery-call" target="_blank"
-              rel="noopener noreferrer"
-              class="tw-opacity-0 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[550ms] tw-transition-opacity tw-inline-block tw-font-heading tw-uppercase tw-border tw-border-white tw-px-4 tw-py-2 tw-rounded-lg tw-text-lg hover:tw-bg-gray-lightest">Let’s
-              do it</a>
-          </div>
-        </article>
-        <article class="tw-min-h-[500px] tw-max-h-[80vh] tw-overflow-hidden header--over-top tw-relative">
-          <div class="img-obj-wrapper tw-absolute tw-inset-0 child:tw-object-cover child:tw-w-full child:tw-h-full">
-            <img class="" src="https://res.cloudinary.com/ds9ng4srx/image/upload/v1585608957/Farrah/Fleischer_286_of_798_Fleischer_286_of_798_fnbzgw.jpg">
-          </div>
-          <div class="tw-absolute tw-bottom-0 tw-left-0 tw-flex tw-p-8 tw-flex-col  tw-items-start tw-justify-end tw-text-left tw-text-white tw-pointer-events-none">
-            <h2 class="tw-opacity-0 [.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[500ms] tw-transition-opacity tw-mb-4 tw-text-white tw-text-3xl tw-font-display-serif md:tw-text-5xl">Set Up a Consultation</h2>
-            <p class="tw-opacity-0 [.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[525ms] tw-transition-opacity tw-max-w-sm tw-mb-8 tw-leading-6 tw-text-base">I would love to find some time to talk about which collection interests you and
-              ensure it’s the best fit.</p>
-            <a href="https://calendly.com/hello-farrah/discovery-call" target="_blank"
-              rel="noopener noreferrer"
-              class="tw-opacity-0 [.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[550ms] tw-transition-opacity tw-inline-block tw-font-heading tw-uppercase tw-border tw-border-white tw-px-4 tw-py-2 tw-rounded-lg tw-text-lg hover:tw-bg-gray-lightest">Let’s
-              do it</a>
-          </div>
-        </article>
-      </section>
+      <template x-if="!!document" x-ref="section">
+        <section 
+          class="" 
+          x-init="if (!document.body.dataset.adminview) { $($el).slick({ speed: 1000, autoplaySpeed: 5000, autoplay: true, arrows: false, fade: true}); }"
+        >
+          <article class="tw-min-h-[500px] tw-max-h-[80vh] tw-overflow-hidden header--over-top tw-relative">
+            <div class="img-obj-wrapper tw-absolute tw-inset-0 child:tw-object-cover child:tw-w-full child:tw-h-full">
+              <img class="" src="https://res.cloudinary.com/ds9ng4srx/image/upload/v1585608957/Farrah/Fleischer_286_of_798_Fleischer_286_of_798_fnbzgw.jpg">
+            </div>
+            <div class="tw-absolute tw-bottom-0 tw-left-0 tw-flex tw-p-8 tw-flex-col  tw-items-start tw-justify-end tw-text-left tw-text-white tw-pointer-events-none">
+              <h2 class="tw-opacity-0 admin:tw-opacity-100 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[500ms] tw-transition-opacity tw-mb-4 tw-text-white tw-text-3xl tw-font-display-serif md:tw-text-5xl">Set Up a Consultation</h2>
+              <p class="tw-opacity-0 admin:tw-opacity-100 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[525ms] tw-transition-opacity tw-max-w-sm tw-mb-8 tw-leading-6 tw-text-base">I would love to find some time to talk about which collection interests you and
+                ensure it’s the best fit.</p>
+              <a href="https://calendly.com/hello-farrah/discovery-call" target="_blank"
+                rel="noopener noreferrer"
+                class="tw-text-white tw-opacity-0 admin:tw-opacity-100 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[550ms] tw-transition-opacity tw-inline-block tw-font-heading tw-uppercase tw-border tw-border-white tw-px-4 tw-py-2 tw-rounded-lg tw-text-lg hover:tw-bg-gray-lightest">Let’s
+                do it</a>
+            </div>
+          </article>
+          <article class="tw-min-h-[500px] tw-max-h-[80vh] tw-overflow-hidden header--over-top tw-relative">
+            <div class="img-obj-wrapper tw-absolute tw-inset-0 child:tw-object-cover child:tw-w-full child:tw-h-full">
+              <img class="" src="https://res.cloudinary.com/ds9ng4srx/image/upload/v1585608957/Farrah/Fleischer_286_of_798_Fleischer_286_of_798_fnbzgw.jpg">
+            </div>
+            <div class="tw-absolute tw-bottom-0 tw-left-0 tw-flex tw-p-8 tw-flex-col  tw-items-start tw-justify-end tw-text-left tw-text-white tw-pointer-events-none">
+              <h2 class="tw-opacity-0 admin:tw-opacity-100 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[500ms] tw-transition-opacity tw-mb-4 tw-text-white tw-text-3xl tw-font-display-serif md:tw-text-5xl">Set Up a Consultation</h2>
+              <p class="tw-opacity-0 admin:tw-opacity-100 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[525ms] tw-transition-opacity tw-max-w-sm tw-mb-8 tw-leading-6 tw-text-base">I would love to find some time to talk about which collection interests you and
+                ensure it’s the best fit.</p>
+              <a href="https://calendly.com/hello-farrah/discovery-call" target="_blank"
+                rel="noopener noreferrer"
+                class="tw-text-white tw-opacity-0 admin:tw-opacity-100 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[550ms] tw-transition-opacity tw-inline-block tw-font-heading tw-uppercase tw-border tw-border-white tw-px-4 tw-py-2 tw-rounded-lg tw-text-lg hover:tw-bg-gray-lightest">Let’s
+                do it</a>
+            </div>
+          </article>
+        </section>
+      </template>
     </div>
 
     <div 
