@@ -150,34 +150,48 @@
       ></button>
       <template x-if="!!document" x-ref="section">
         <section 
-          class="" 
-          x-init="if (!document.body.dataset.adminview) { $($el).slick({ speed: 1000, autoplaySpeed: 5000, autoplay: true, arrows: false, fade: true}); }"
+          class="tw-text-white" 
+          x-init="if (!document.body.dataset.adminview) { $($el).slick({ dots: true, speed: 1000, autoplaySpeed: 5000, autoplay: true, arrows: false, fade: true}); }"
         >
-          <article class="tw-min-h-[500px] tw-max-h-[80vh] tw-overflow-hidden header--over-top tw-relative">
+          <article class="tw-h-[80vh] tw-overflow-hidden tw-relative tw-text-white">
             <div class="img-obj-wrapper tw-absolute tw-inset-0 child:tw-pointer-events-none child:tw-object-cover child:tw-w-full child:tw-h-full">
               <img class="" src="https://res.cloudinary.com/ds9ng4srx/image/upload/v1585608957/Farrah/Fleischer_286_of_798_Fleischer_286_of_798_fnbzgw.jpg">
             </div>
-            <div class="tw-absolute tw-bottom-0 tw-left-0 tw-flex tw-p-8 tw-flex-col  tw-items-start tw-justify-end tw-text-left tw-text-white tw-pointer-events-none">
-              <h2 class="tw-opacity-0 admin:tw-opacity-100 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[500ms] tw-transition-opacity tw-mb-4 tw-text-white tw-text-3xl tw-font-display-serif md:tw-text-5xl">Set Up a Consultation</h2>
-              <p class="tw-opacity-0 admin:tw-opacity-100 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[525ms] tw-transition-opacity tw-max-w-sm tw-mb-8 tw-leading-6 tw-text-base">I would love to find some time to talk about which collection interests you and
+            <div class="tw-absolute tw-bottom-0 tw-left-0 tw-flex tw-p-8 tw-flex-col  tw-items-start tw-justify-end tw-text-left tw-text-current tw-pointer-events-none">
+              <h2 class="tw-opacity-0 admin:tw-opacity-100 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[500ms] tw-transition-opacity tw-mb-4 tw-text-current tw-text-3xl tw-font-display-serif md:tw-text-5xl">Set Up a Consultation</h2>
+              <p class="tw-opacity-0 admin:tw-opacity-100 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[525ms] tw-transition-opacity tw-max-w-sm tw-mb-8 tw-text-current tw-leading-6 tw-text-base">I would love to find some time to talk about which collection interests you and
                 ensure it’s the best fit.</p>
               <a href="https://calendly.com/hello-farrah/discovery-call" target="_blank"
                 rel="noopener noreferrer"
-                class="tw-text-white tw-opacity-0 admin:tw-opacity-100 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[550ms] tw-transition-opacity tw-inline-block tw-font-heading tw-uppercase tw-border tw-border-white tw-px-4 tw-py-2 tw-rounded-lg tw-text-lg hover:tw-bg-gray-lightest">Let’s
+                class="tw-text-current tw-opacity-0 admin:tw-opacity-100 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[550ms] tw-transition-opacity tw-inline-block tw-font-heading tw-uppercase tw-border tw-border-current tw-px-4 tw-py-2 tw-rounded-lg tw-text-lg hover:tw-bg-gray-lightest">Let’s
                 do it</a>
             </div>
           </article>
-          <article class="tw-min-h-[500px] tw-max-h-[80vh] tw-overflow-hidden header--over-top tw-relative">
+          <article class="tw-h-[80vh] tw-overflow-hidden tw-relative tw-text-white">
             <div class="img-obj-wrapper tw-absolute tw-inset-0 child:tw-pointer-events-none child:tw-object-cover child:tw-w-full child:tw-h-full">
               <img class="" src="https://res.cloudinary.com/ds9ng4srx/image/upload/v1585608957/Farrah/Fleischer_286_of_798_Fleischer_286_of_798_fnbzgw.jpg">
             </div>
-            <div class="tw-absolute tw-bottom-0 tw-left-0 tw-flex tw-p-8 tw-flex-col  tw-items-start tw-justify-end tw-text-left tw-text-white tw-pointer-events-none">
-              <h2 class="tw-opacity-0 admin:tw-opacity-100 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[500ms] tw-transition-opacity tw-mb-4 tw-text-white tw-text-3xl tw-font-display-serif md:tw-text-5xl">Set Up a Consultation</h2>
-              <p class="tw-opacity-0 admin:tw-opacity-100 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[525ms] tw-transition-opacity tw-max-w-sm tw-mb-8 tw-leading-6 tw-text-base">I would love to find some time to talk about which collection interests you and
+            <div class="tw-absolute tw-bottom-0 tw-left-0 tw-flex tw-p-8 tw-flex-col  tw-items-start tw-justify-end tw-text-left tw-text-current tw-pointer-events-none">
+              <h2 class="tw-opacity-0 admin:tw-opacity-100 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[500ms] tw-transition-opacity tw-mb-4 tw-text-current tw-text-3xl tw-font-display-serif md:tw-text-5xl">Set Up a Consultation</h2>
+              <p class="tw-opacity-0 admin:tw-opacity-100 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[525ms] tw-transition-opacity tw-max-w-sm tw-mb-8 tw-text-current tw-leading-6 tw-text-base">I would love to find some time to talk about which collection interests you and
                 ensure it’s the best fit.</p>
               <a href="https://calendly.com/hello-farrah/discovery-call" target="_blank"
                 rel="noopener noreferrer"
-                class="tw-text-white tw-opacity-0 admin:tw-opacity-100 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[550ms] tw-transition-opacity tw-inline-block tw-font-heading tw-uppercase tw-border tw-border-white tw-px-4 tw-py-2 tw-rounded-lg tw-text-lg hover:tw-bg-gray-lightest">Let’s
+                class="tw-text-current tw-opacity-0 admin:tw-opacity-100 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[550ms] tw-transition-opacity tw-inline-block tw-font-heading tw-uppercase tw-border tw-border-current tw-px-4 tw-py-2 tw-rounded-lg tw-text-lg hover:tw-bg-gray-lightest">Let’s
+                do it</a>
+            </div>
+          </article>
+          <article class="tw-h-[80vh] tw-overflow-hidden tw-relative tw-text-white">
+            <div class="img-obj-wrapper tw-absolute tw-inset-0 child:tw-pointer-events-none child:tw-object-cover child:tw-w-full child:tw-h-full">
+              <img class="" src="https://res.cloudinary.com/ds9ng4srx/image/upload/v1585608957/Farrah/Fleischer_286_of_798_Fleischer_286_of_798_fnbzgw.jpg">
+            </div>
+            <div class="tw-absolute tw-bottom-0 tw-left-0 tw-flex tw-p-8 tw-flex-col  tw-items-start tw-justify-end tw-text-left tw-text-current tw-pointer-events-none">
+              <h2 class="tw-opacity-0 admin:tw-opacity-100 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[500ms] tw-transition-opacity tw-mb-4 tw-text-current tw-text-3xl tw-font-display-serif md:tw-text-5xl">Set Up a Consultation</h2>
+              <p class="tw-opacity-0 admin:tw-opacity-100 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[525ms] tw-transition-opacity tw-max-w-sm tw-mb-8 tw-text-current tw-leading-6 tw-text-base">I would love to find some time to talk about which collection interests you and
+                ensure it’s the best fit.</p>
+              <a href="https://calendly.com/hello-farrah/discovery-call" target="_blank"
+                rel="noopener noreferrer"
+                class="tw-text-current tw-opacity-0 admin:tw-opacity-100 [.slick-slider_.slick-active_&]:tw-opacity-100 tw-duration-700 tw-delay-[550ms] tw-transition-opacity tw-inline-block tw-font-heading tw-uppercase tw-border tw-border-current tw-px-4 tw-py-2 tw-rounded-lg tw-text-lg hover:tw-bg-gray-lightest">Let’s
                 do it</a>
             </div>
           </article>

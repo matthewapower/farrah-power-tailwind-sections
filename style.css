@@ -798,7 +798,41 @@ select {
   color: black !important;
 }
 
+@keyframes slidein {
+  from {
+    transform: translateX(-100%);
+  }
 
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.slick-dotted {
+  position: relative;
+}
+
+.slick-dots {
+  @apply tw-absolute tw-bottom-0 tw-right-0 tw-flex tw-p-4 tw-gap-4;
+}
+
+.slick-dots li {
+  @apply tw-w-12 tw-bg-white/25 tw-h-px tw-relative tw-overflow-hidden;
+  @apply after:tw-absolute after:tw-bg-current after:tw-inset-0;
+  @apply after:tw-origin-left after:tw-translate-x-0;
+}
+
+.slick-dots li.slick-active ~ li:after {
+  transform: translateX(-100%);
+}
+
+.slick-dots li.slick-active:after {
+  animation: slidein 7000ms;
+}
+
+.slick-dots li * {
+  @apply tw-sr-only;
+}
 
 .img-obj-wrapper img {
   object-fit: cover !important;

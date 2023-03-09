@@ -16,6 +16,7 @@ module.exports = {
       colors: {
         tan: "#F6F1EC",
         "gray-lightest": "#ECECEC",
+        "current": "currentColor"
       },
     },
   },
