@@ -8,7 +8,7 @@
     <style type="text/css">@font-face{font-family:garamond-premier-pro-display;src:url(https://use.typekit.net/af/9f2fb4/00000000000000003b9ade33/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/9f2fb4/00000000000000003b9ade33/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/9f2fb4/00000000000000003b9ade33/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:garamond-premier-pro;src:url(https://use.typekit.net/af/e2b8db/00000000000000003b9ade23/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/e2b8db/00000000000000003b9ade23/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/e2b8db/00000000000000003b9ade23/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:poppins;src:url(https://use.typekit.net/af/e41b92/00000000000000003b9b1378/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/e41b92/00000000000000003b9b1378/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/e41b92/00000000000000003b9b1378/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:poppins;src:url(https://use.typekit.net/af/b45ee0/00000000000000003b9b137e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b45ee0/00000000000000003b9b137e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b45ee0/00000000000000003b9b137e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:neue-haas-grotesk-display;src:url(https://use.typekit.net/af/9395af/00000000000000003b9b2046/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/9395af/00000000000000003b9b2046/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/9395af/00000000000000003b9b2046/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}</style>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   </head>
-  <body class="" data-adminview>
+  <body class="" disble-data-adminview>
     <header 
       x-data="{
         links: [
@@ -153,7 +153,7 @@
           class="tw-text-white" 
           x-init="if (!document.body.dataset.adminview) { $($el).slick({ dots: true, speed: 1000, autoplaySpeed: 5000, autoplay: true, arrows: false, fade: true}); }"
         >
-          <article class="tw-h-[80vh] tw-overflow-hidden tw-relative tw-text-white">
+          <article class="tw-h-full tw-aspect-[2/3] md:tw-aspect-[16/9] tw-overflow-hidden tw-relative tw-text-white">
             <div class="img-obj-wrapper tw-absolute tw-inset-0 child:tw-pointer-events-none child:tw-object-cover child:tw-w-full child:tw-h-full">
               <img class="" src="https://res.cloudinary.com/ds9ng4srx/image/upload/v1585608957/Farrah/Fleischer_286_of_798_Fleischer_286_of_798_fnbzgw.jpg">
             </div>
@@ -167,7 +167,7 @@
                 do it</a>
             </div>
           </article>
-          <article class="tw-h-[80vh] tw-overflow-hidden tw-relative tw-text-white">
+          <article class="tw-h-full tw-aspect-[2/3] md:tw-aspect-[16/9] tw-overflow-hidden tw-relative tw-text-white">
             <div class="img-obj-wrapper tw-absolute tw-inset-0 child:tw-pointer-events-none child:tw-object-cover child:tw-w-full child:tw-h-full">
               <img class="" src="https://res.cloudinary.com/ds9ng4srx/image/upload/v1585608957/Farrah/Fleischer_286_of_798_Fleischer_286_of_798_fnbzgw.jpg">
             </div>
@@ -181,7 +181,7 @@
                 do it</a>
             </div>
           </article>
-          <article class="tw-h-[80vh] tw-overflow-hidden tw-relative tw-text-white">
+          <article class="tw-h-full tw-aspect-[2/3] md:tw-aspect-[16/9] tw-overflow-hidden tw-relative tw-text-white">
             <div class="img-obj-wrapper tw-absolute tw-inset-0 child:tw-pointer-events-none child:tw-object-cover child:tw-w-full child:tw-h-full">
               <img class="" src="https://res.cloudinary.com/ds9ng4srx/image/upload/v1585608957/Farrah/Fleischer_286_of_798_Fleischer_286_of_798_fnbzgw.jpg">
             </div>
@@ -197,6 +197,82 @@
           </article>
         </section>
       </template>
+    </div>
+
+    <div 
+      class="tw-group tw-relative" 
+      x-data="{ 
+        content: 'COPY', 
+        count: 2,
+        aspectRatioIndex: 0,
+        aspectRatios: [
+          {name: '16 X 9', class: 'max-lg:tw-aspect-[16/9]'},
+          {name: '4 X 5', class: 'max-lg:tw-aspect-[4/5]'},
+          {name: '5 X 4', class: 'max-lg:tw-aspect-[5/4]'},
+          {name: '1 X 1', class: 'max-lg:tw-aspect-[1/1]'}
+        ],
+        aspectRatioIndexLG: 0,
+        aspectRatiosLG: [
+          {name: '16 X 9', class: 'lg:tw-aspect-[16/9]'},
+          {name: '4 X 5', class: 'lg:tw-aspect-[4/5]'},
+          {name: '5 X 4', class: 'lg:tw-aspect-[5/4]'},
+          {name: '1 X 1', class: 'lg:tw-aspect-[1/1]'}
+        ],
+      }"
+    >
+      <div class="tw-absolute tw-top-0 tw-right-0 tw-m-4 tw-hidden group-hover:tw-flex tw-z-50 tw-gap-4">
+        <button 
+          class="tw-bg-gray-500 tw-text-white tw-p-2 tw-rounded active:tw-bg-gray-600 tw-uppercase"
+          @click="(aspectRatioIndex == aspectRatios.length - 1) ? aspectRatioIndex = 0 : aspectRatioIndex++"
+          x-text="'Mobile: ' + aspectRatios[aspectRatioIndex].name"
+        ></button>
+
+        <button 
+          class="tw-bg-gray-500 tw-text-white tw-p-2 tw-rounded active:tw-bg-gray-600 tw-uppercase"
+          @click="(aspectRatioIndexLG == aspectRatiosLG.length - 1) ? aspectRatioIndexLG = 0 : aspectRatioIndexLG++"
+          x-text="'Desktop: ' + aspectRatiosLG[aspectRatioIndexLG].name"
+        ></button>
+
+        <div class="tw-bg-gray-500 tw-text-white tw-rounded tw-uppercase">
+          <button 
+            class="tw-p-2 active:tw-bg-gray-600"
+            @click="if (count >= 2) count--"
+          >-</button>
+          <span x-text="`${count} items`" class="tw-p-2"></span>
+          <button 
+            class="tw-p-2 active:tw-bg-gray-600"
+            @click="count++"
+          >+</button>
+        </div>
+
+        <button 
+          class="tw-bg-gray-500 tw-text-white tw-p-2 tw-rounded active:tw-bg-gray-600 tw-uppercase"
+          @click="navigator.clipboard.writeText($refs.section.outerHTML.replace(/<img(.*?)>/g, '{image 1}')); content = 'COPIED!'"
+          @mouseleave="content = 'COPY'"
+          x-text="content"
+        ></button>
+      </div>
+      <section class="tw-text-white tw-p-4 tw-flex tw-flex-col lg:tw-flex-row tw-gap-4" x-ref="section">
+
+        <template x-for="i in count" hidden>
+          <a 
+            href="#" 
+            class="tw-group/card tw-overflow-hidden tw-relative tw-text-white tw-relative tw-w-full tw-h-full" 
+            :class="aspectRatiosLG[aspectRatioIndexLG].class">
+            <div 
+              class="img-obj-wrapper lg:tw-absolute lg:tw-inset-0 child:tw-pointer-events-none child:tw-object-cover child:tw-w-full child:tw-h-full"
+              :class="aspectRatios[aspectRatioIndex].class"
+              >
+              <img class="" src="https://res.cloudinary.com/ds9ng4srx/image/upload/v1585608957/Farrah/Fleischer_286_of_798_Fleischer_286_of_798_fnbzgw.jpg">
+            </div>
+            <div class="tw-text-center lg:tw-absolute tw-inset-8 lg:group-hover/card:tw-bg-tan lg:group-hover/card:tw-bg-opacity-75 tw-text-black lg:tw-text-white group-hover/card:tw-text-black tw-flex tw-p-8 tw-flex-col  tw-items-center tw-justify-center tw-text-left tw-text-current tw-pointer-events-none">
+              <h2 class="tw-w-full tw-mb-4 tw-text-current tw-text-3xl tw-font-display-serif md:tw-text-5xl">Film</h2>
+              <p class="lg:tw-hidden lg:group-hover/card:tw-block admin:tw-block tw-max-w-sm tw-mb-8 tw-text-current tw-leading-6 tw-text-base">Minim excepteur nostrud nisi adipisicing est exercitation nulla ut dolore est deserunt tempor occaecat.</p>
+            </div>
+          </a>
+        </template>
+        
+      </section>
     </div>
 
     <div 
