@@ -3,6 +3,7 @@
 let plugin = require("tailwindcss/plugin");
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  safelist: [{ pattern: /tw-text-(left|center|right|white|black|current)/, variants:['lg'] }],
   prefix: "tw-",
   important: true,
   theme: {
@@ -16,14 +17,12 @@ module.exports = {
       colors: {
         tan: "#F6F1EC",
         "gray-lightest": "#ECECEC",
-        "current": "currentColor"
       },
     },
   },
   plugins: [
     plugin(function ({ addVariant }) {
-      addVariant("child", "& *")
-      addVariant("admin", "[data-adminview] &")
+      addVariant("child", "& *");
     }),
   ],
 };
