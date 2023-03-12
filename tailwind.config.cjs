@@ -17,12 +17,14 @@ module.exports = {
       colors: {
         tan: "#F6F1EC",
         "gray-lightest": "#ECECEC",
+        "current": "currentColor"
       },
     },
   },
   plugins: [
     plugin(function ({ addVariant }) {
       addVariant("child", "& *");
+      addVariant("admin", "[data-adminview] &")
     }),
   ],
 };
